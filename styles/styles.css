@@ -1,0 +1,157 @@
+/* Reset HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Montserrat", sans-serif;*/
+
+/* Fuente de sitio web */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos MAIN contacto */
+.img-div-contacto {
+    width: 25px;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.p-div-contacto {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.a-div-contacto {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.body{
+    background-image: url('../imagenes/Fondo_de_pagina.png');
+    background-size: cover;         /* La imagen ocupa toda la pantalla */
+    background-position: center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* No se repite */
+    background-attachment: fixed;   /* Deja la imagen fija*/
+}
+
+.boton__hamburguesa {
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar__logo {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main__card {
+    margin: 20px auto;
+    width: 100%;
+    height: 500px;
+    max-width: 80%;
+    border-radius: 0;
+}
+
+.productos__imagen {
+    height: auto;
+    object-fit: cover;
+}
+
+.productos__carta, .productos__imagen {
+    border-radius: 0;
+}
+
+.productos__imagen{
+    transition: 0.3s ease-in-out;
+}
+
+.productos__texto{
+    opacity: 0;
+    font-size: 40px;
+    color: black;
+}
+
+.productos__link:hover .productos__imagen{
+    opacity: 0.4;
+}
+
+.productos__link:hover .productos__texto{
+    opacity: 1;
+}
+
+.nosotros__main, .contacto__main, .informacion__main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.contacto__main::before, .informacion__main::before {
+    background-image: url('../imagenes/Fondo_de_pagina.png');
+}
+
+.nosotros__main::before{
+    background-image: url('../imagenes/Nosotros.jpg');
+}
+
+.main__fondo::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.nosotros__section, .contacto__section, .informacion__section {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    z-index: 1;
+    padding: 30px 10px;
+}
+
+.contacto__main, .informacion__main{
+    align-items: flex-start;
+}
+
+.contacto__redes-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacto__boton--enviar{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.contacto__boton--enviar:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.contacto__boton--formulario::placeholder{
+    
+}
