@@ -82,13 +82,13 @@
     color: black;
 } */
 
-/* .productos__link:hover .productos__img{
+.productos__link:hover .productos__img{
     opacity: 0.4;
 }
 
 .productos__link:hover .productos__texto{
     opacity: 1;
-} */
+}
 
 .nosotros__main, .contacto__main, .informacion__main {
     height: auto;

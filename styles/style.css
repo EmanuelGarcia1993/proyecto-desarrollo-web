@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 nav {
   padding: 3px 0;
   background-color: #3F342D;
@@ -73,6 +80,37 @@ main div.productos div.productos__contenedor div div.productos__carta a.producto
   opacity: 0;
   font-size: 40px;
   color: black;
+}
+
+.nosotros__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.nosotros__main::before {
+  content: "";
+  background-image: url("../imagenes/Nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.nosotros__main section {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 24px;
+  padding: 30px 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
