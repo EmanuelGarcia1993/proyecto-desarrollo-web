@@ -1,0 +1,15 @@
+@use "../utilities/variables";
+
+footer{
+    div{
+        background-color: variables.$nav-footer-color;
+        color: variables.$nav-footer-text-color;
+        padding: 6px;
+        margin: 0px;
+        div{
+            p{
+                margin: 0px;
+            }
+        }
+    }
+}

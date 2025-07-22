@@ -1,0 +1,9 @@
+// Base
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+//Componentes
+@use "./partials/components/navbar";
+@use "./partials/components/index";
+@use "./partials/components/footer";
+@use "./partials/components/productos";

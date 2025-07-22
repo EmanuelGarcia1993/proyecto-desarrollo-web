@@ -6,13 +6,13 @@
 }
 
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/*font-family: "Montserrat", sans-serif;*/
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ *//*font-family: "Montserrat", sans-serif;*/
 
 /* Fuente de sitio web */
-body {
+/* body {
     font-family: "Montserrat", sans-serif;
-}
+} */
 
 /* Estilos MAIN contacto */
 .img-div-contacto {
@@ -43,51 +43,52 @@ body {
     background-attachment: fixed;   /* Deja la imagen fija*/
 }
 
-.boton__hamburguesa {
+/* .boton__hamburguesa {
     border: none;
     border-radius: 5px;
-}
+} */
+ 
 
-.navbar__logo {
+/* .navbar__logo {
     width: auto;
     height: auto;
     margin: 0 auto;
-}
+} */
 
-.main__card {
+/* .main__card {
     margin: 20px auto;
     width: 100%;
     height: 500px;
     max-width: 80%;
     border-radius: 0;
-}
+} */
 
-.productos__imagen {
+/* .productos__img {
     height: auto;
     object-fit: cover;
-}
+} */
 
-.productos__carta, .productos__imagen {
+.productos__carta, .productos__img {
     border-radius: 0;
 }
 
-.productos__imagen{
+/* .productos__img{
     transition: 0.3s ease-in-out;
-}
+} */
 
-.productos__texto{
+/* .productos__texto{
     opacity: 0;
     font-size: 40px;
     color: black;
-}
+} */
 
-.productos__link:hover .productos__imagen{
+/* .productos__link:hover .productos__img{
     opacity: 0.4;
 }
 
 .productos__link:hover .productos__texto{
     opacity: 1;
-}
+} */
 
 .nosotros__main, .contacto__main, .informacion__main {
     height: auto;

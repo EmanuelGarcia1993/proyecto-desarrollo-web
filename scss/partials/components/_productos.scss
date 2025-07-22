@@ -1,0 +1,46 @@
+main{
+    div{
+        &.productos{
+            padding: 12px;
+            div{
+                &.productos__contenedor{
+                    div{
+                        div{
+                            &.productos__carta{
+                                padding: 0px;
+                                a{
+                                    &.productos__link{
+                                        &:hover{
+                                            & .productos__img{
+                                                opacity: 0.4;
+                                            }
+                                            & .productos__texto{
+                                                opacity: 1;
+                                            }
+                                        }
+                                        img{
+                                            &.productos__img{
+                                                height: auto;
+                                                width: 100%;
+                                                object-fit: cover;
+                                                border-radius: 0;
+                                                transition: 0.3s ease-in-out;
+                                            }
+                                        }
+                                        div{
+                                            &.productos__texto{
+                                                opacity: 0;
+                                                font-size: 40px;
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
