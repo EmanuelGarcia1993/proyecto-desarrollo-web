@@ -1,0 +1,74 @@
+@import "../utilities/mixins";
+
+.contacto__main {
+    @include flex(row, center, center, relative);
+    @include fondo('../imagenes/Fondo_de_pagina.png');
+    height: 100%;
+    padding-top: 56px;
+    
+    .contacto__section {
+        @include contenido_main();
+        color: black;
+        font-size: 24px;
+        padding: 0 10px;
+        text-align: center;
+
+        .contacto__div--redes {
+            @include flex(row, center, center, relative);
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+
+            .contacto__div {
+                @include flex(column, center, center, relative);
+                gap: 10px;
+
+                .contacto__img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .contacto__p {
+                    font-size: 18px;
+                    margin: 0;
+                }
+
+                .contacto__a {
+                    color: rgb(40, 40, 255);
+                    text-decoration: none;
+                }
+            }
+        }
+        div{
+            div{
+                .contacto__boton--formulario{
+
+                }
+                div{
+                    div{
+                        form{
+                            div{
+                                label{
+                                    font-weight: 400;
+                                }
+
+                                .contacto__boton--enviar{
+                                    background-color: white;
+                                    color: black;
+                                    border-color: black;
+
+                                    &:hover{
+                                        background-color: black;
+                                        color: white;
+                                        border-color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

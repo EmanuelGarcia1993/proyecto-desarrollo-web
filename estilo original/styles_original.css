@@ -90,7 +90,7 @@
     opacity: 1;
 }
 
-.nosotros__main, .contacto__main, .informacion__main {
+.informacion__main {
     height: auto;
     display: flex;
     justify-content: center;

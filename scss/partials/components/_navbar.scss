@@ -1,6 +1,8 @@
 @use "../utilities/variables";
 
 nav{
+    height: 56px;
+    position: fixed;
     padding: 3px 0;
     background-color: #3F342D; 
     div{

@@ -1,0 +1,26 @@
+@import "../utilities/mixins";
+
+.informacion__main {
+    @include flex(column, center, center, relative);
+    @include fondo('../imagenes/Fondo_de_pagina.png');
+    height: auto;
+    
+    section {
+        @include contenido_main();
+        color: black;
+        font-size: 24px;
+        padding: 30px 10px;
+        text-align: center;
+
+        div{
+            padding-bottom: 25px;
+
+            p{
+                margin: 0;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
