@@ -3,9 +3,10 @@
 .contacto__main {
     @include flex(row, center, center, relative);
     @include fondo('../imagenes/Fondo_de_pagina.png');
-    height: 100%;
-    padding-top: 56px;
-    
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 111px;
+
     .contacto__section {
         @include contenido_main();
         color: black;
@@ -28,45 +29,57 @@
                     width: 50px;
                     height: 50px;
                 }
-
                 .contacto__p {
                     font-size: 18px;
                     margin: 0;
                 }
-
                 .contacto__a {
                     color: rgb(40, 40, 255);
                     text-decoration: none;
                 }
             }
         }
-        div{
-            div{
-                .contacto__boton--formulario{
+        label{
+            font-weight: 400;
+        }
+        .contacto__boton--enviar{
+            background-color: white;
+            color: black;
+            border-color: black;
+            &:hover{
+                background-color: black;
+                color: white;
+                border-color: white;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contacto__main{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 20px;
+        font-size: 10px;
 
-                }
-                div{
-                    div{
-                        form{
-                            div{
-                                label{
-                                    font-weight: 400;
-                                }
+        .contacto__section {
+            font-size: 18px;
 
-                                .contacto__boton--enviar{
-                                    background-color: white;
-                                    color: black;
-                                    border-color: black;
+            .contacto__div--redes {
+                flex-direction: column;
+                gap: 16px;
 
-                                    &:hover{
-                                        background-color: black;
-                                        color: white;
-                                        border-color: white;
-                                    }
-                                }
-                            }
-                        }
+                .contacto__div {
+                    width: 100%;
+
+                    .contacto__img {
+                        width: 40px;
+                        height: 40px;
                     }
+                }
+            }
+            form {
+                .col-md-6 {
+                    width: 100%;
                 }
             }
         }

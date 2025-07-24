@@ -18,12 +18,20 @@ nav {
   position: fixed;
   padding: 3px 0;
   background-color: #3F342D;
+  z-index: 1000;
 }
 nav div a.navbar__a--logo {
   color: #DFD0C4;
 }
 nav div a.navbar__a--logo:hover {
-  color: #F2E9E4;
+  color: #3F342D;
+}
+nav div div {
+  background-color: #3F342D;
+  border-radius: 0px 0px 10px 10px;
+}
+nav div div ul li {
+  padding: 0px 10px;
 }
 nav div div ul li a.navbar__a {
   color: #DFD0C4;
@@ -42,12 +50,29 @@ nav div div ul li a.navbar__a--active:hover {
   color: #F2E9E4;
 }
 
-main section div.index__card {
+.index__main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+}
+.index__main section section div.index__card {
   margin: 20px auto;
   width: 100%;
   height: 500px;
   max-width: 80%;
   border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .index__main section .index__card div {
+    max-height: 50%;
+  }
+  .index__main section .index__card img {
+    display: none;
+  }
 }
 footer div {
   background-color: #3F342D;
@@ -90,7 +115,7 @@ main div.productos div.productos__contenedor div div.productos__carta a.producto
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100%;
+  height: auto;
 }
 .nosotros__main::before {
   content: "";
@@ -115,14 +140,21 @@ main div.productos div.productos__contenedor div div.productos__carta a.producto
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .nosotros__main section {
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+}
 .contacto__main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100%;
-  padding-top: 56px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 111px;
 }
 .contacto__main::before {
   content: "";
@@ -177,20 +209,45 @@ main div.productos div.productos__contenedor div div.productos__carta a.producto
   color: rgb(40, 40, 255);
   text-decoration: none;
 }
-.contacto__main .contacto__section div div div div form div label {
+.contacto__main .contacto__section label {
   font-weight: 400;
 }
-.contacto__main .contacto__section div div div div form div .contacto__boton--enviar {
+.contacto__main .contacto__section .contacto__boton--enviar {
   background-color: white;
   color: black;
   border-color: black;
 }
-.contacto__main .contacto__section div div div div form div .contacto__boton--enviar:hover {
+.contacto__main .contacto__section .contacto__boton--enviar:hover {
   background-color: black;
   color: white;
   border-color: white;
 }
 
+@media (max-width: 768px) {
+  .contacto__main {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .contacto__main .contacto__section {
+    font-size: 18px;
+  }
+  .contacto__main .contacto__section .contacto__div--redes {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .contacto__main .contacto__section .contacto__div--redes .contacto__div {
+    width: 100%;
+  }
+  .contacto__main .contacto__section .contacto__div--redes .contacto__div .contacto__img {
+    width: 40px;
+    height: 40px;
+  }
+  .contacto__main .contacto__section form .col-md-6 {
+    width: 100%;
+  }
+}
 .informacion__main {
   display: flex;
   flex-direction: column;
@@ -229,6 +286,13 @@ main div.productos div.productos__contenedor div div.productos__carta a.producto
 }
 .informacion__main section div p span {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .informacion__main section {
+    padding: 20px 10px;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

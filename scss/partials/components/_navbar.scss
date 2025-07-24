@@ -4,19 +4,24 @@ nav{
     height: 56px;
     position: fixed;
     padding: 3px 0;
-    background-color: #3F342D; 
+    background-color: variables.$nav-footer-color;
+    z-index: 1000;
     div{
         a{
             &.navbar__a--logo{
                 color: variables.$nav-footer-text-color;
                 &:hover{
-                    color: variables.$nav-footer-text-hover-color;
+                    color: variables.$nav-footer-color;
                 }
             }
         }
         div{
+            background-color: variables.$nav-footer-color;
+            border-radius: 0px 0px 10px 10px;
+            
             ul{
                 li{
+                    padding: 0px 10px;
                     a{
                         &.navbar__a{
                             color: variables.$nav-footer-text-color;

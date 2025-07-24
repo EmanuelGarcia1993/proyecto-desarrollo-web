@@ -1,27 +1,39 @@
-main{
+@import "../utilities/mixins";
+
+.index__main {
     section{
-        div{
-            &.index__card{
-
-                margin: 20px auto;
-                width: 100%;
-                height: 500px;
-                max-width: 80%;
-                border-radius: 0;
-
-                div{
-                    h2{
-                        
-                    }
-                    p{
-                        
-                    }
-                }
-                img{
-
+        @include flex(column, center, center, relative);
+        height: auto;
+        
+        section{
+            div{
+                &.index__card{
+                    
+                    margin: 20px auto;
+                    width: 100%;
+                    height: 500px;
+                    max-width: 80%;
+                    border-radius: 0;
                 }
             }
         }
+    }
+}
 
+@media (max-width: 768px) {
+    .index__main{
+
+        section{
+            
+            .index__card{
+
+                div{
+                    max-height: 50%;
+                }
+                img{
+                    display: none
+                }
+            }
+        }
     }
 }
