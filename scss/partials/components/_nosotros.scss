@@ -1,11 +1,11 @@
-@import "../utilities/mixins";
+@use "../utilities/mixins";
 
 .nosotros__main{
-    @include flex(column, center, center, relative);
-    @include fondo('../imagenes/Nosotros.jpg');
+    @include mixins.flex(column, center, center, relative);
+    @include mixins.fondo('../imagenes/Nosotros.jpg');
     height: auto;
     section{
-        @include contenido_main();
+        @include mixins.contenido_main();
         color: black;
         font-size: 24px;
         padding: 30px 10px;

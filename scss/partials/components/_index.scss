@@ -1,8 +1,8 @@
-@import "../utilities/mixins";
+@use "../utilities/mixins";
 
 .index__main {
     section{
-        @include flex(column, center, center, relative);
+        @include mixins.flex(column, center, center, relative);
         height: auto;
         
         section{
