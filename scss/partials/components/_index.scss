@@ -8,7 +8,6 @@
         section{
             div{
                 &.index__card{
-                    
                     margin: 20px auto;
                     width: 100%;
                     height: 500px;
@@ -21,19 +20,32 @@
 }
 
 @media (max-width: 768px) {
-    .index__main{
-
-        section{
-            
-            .index__card{
-
-                div{
-                    max-height: 50%;
-                }
-                img{
-                    display: none
-                }
+    .index__card{
+        div{
+            @include mixins.contenido_main();
+            @include mixins.flex(column, center, center, relative);
+            text-align: center;
+            h2{
+                padding: 20px 0px;
+                font-size: 30px;
+                font-weight: 400;
+            }
+            p{
+                padding: 20px 0px;
+                font-size: 20px;
             }
         }
+        img{
+            display: none; 
+        }
+    }
+    .index__card--uno{
+        @include mixins.fondo('../imagenes/Imagen_de_producto.jpg', scroll);
+    }
+    .index__card--dos{
+        @include mixins.fondo('../imagenes/Imagen_de_ambiente.jpg', scroll);
+    }
+    .index__card--tres{
+        @include mixins.fondo('../imagenes/Imagen_de_nosotros.jpg', scroll);
     }
 }

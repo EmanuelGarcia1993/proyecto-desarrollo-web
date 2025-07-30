@@ -2,7 +2,7 @@
 
 .contacto__main {
     @include mixins.flex(row, center, center, relative);
-    @include mixins.fondo('../imagenes/Fondo_de_pagina.png');
+    @include mixins.fondo('../imagenes/Fondo_de_pagina.png', fixed);
     height: auto;
     padding-top: 10px;
     padding-bottom: 111px;
@@ -54,6 +54,7 @@
         }
     }
 }
+
 @media (max-width: 768px) {
     .contacto__main{
         flex-direction: column;

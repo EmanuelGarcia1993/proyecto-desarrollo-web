@@ -2,8 +2,9 @@
 
 .nosotros__main{
     @include mixins.flex(column, center, center, relative);
-    @include mixins.fondo('../imagenes/Nosotros.jpg');
+    @include mixins.fondo('../imagenes/Nosotros.jpg', fixed);
     height: auto;
+    
     section{
         @include mixins.contenido_main();
         color: black;

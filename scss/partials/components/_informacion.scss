@@ -2,7 +2,7 @@
 
 .informacion__main {
     @include mixins.flex(column, center, center, relative);
-    @include mixins.fondo('../imagenes/Fondo_de_pagina.png');
+    @include mixins.fondo('../imagenes/Fondo_de_pagina.png', fixed);
     height: auto;
     
     section {
@@ -17,6 +17,7 @@
 
             p{
                 margin: 0;
+                
                 span{
                     font-weight: 600;
                 }

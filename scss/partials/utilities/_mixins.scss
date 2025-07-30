@@ -6,13 +6,13 @@
     position: $position;
 }
 
-@mixin fondo($imagen)  {
+@mixin fondo($imagen, $attachment)  {
     &::before {
         content: '';
         background-image: url($imagen);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: $attachment;
         background-position: center;
         position: absolute;
         top: 0;
