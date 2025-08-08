@@ -31,9 +31,11 @@ nav{
             }
 
             .navbar__a--active{
-                padding: 5px;
+                margin: 4px 0px;
+                padding: 2px 5px;
                 border: 1px solid variables.$nav-footer-active-border-color;
                 border-radius: 50px;
+                box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.518);
                 background-color: variables.$nav-footer-active-bg-color;
                 color: variables.$nav-footer-text-color;
                 &:hover{

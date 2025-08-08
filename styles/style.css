@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: "montserrat", sans-serif;
 }
 
 nav {
@@ -43,9 +50,11 @@ nav div li .navbar__a:hover {
   color: #F2E9E4;
 }
 nav div li .navbar__a--active {
-  padding: 5px;
+  margin: 4px 0px;
+  padding: 2px 5px;
   border: 1px solid #694E3A;
   border-radius: 50px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.518);
   background-color: #945E38;
   color: #DFD0C4;
 }
@@ -68,9 +77,30 @@ nav div li .navbar__a--active:hover {
   max-width: 80%;
   border-radius: 0;
 }
+.index__main section section div.index__card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.index__main section section div.index__card div p {
+  font-weight: 400;
+  font-style: normal;
+}
+.index__main section section div.index__card--uno {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), white);
+}
+.index__main section section div.index__card--dos {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), white);
+}
+.index__main section section div.index__card--tres {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), white);
+}
 
-@media (max-width: 768px) {
-  .index__card div {
+@media (max-width: 848px) {
+  section .index__card div {
     position: relative;
     z-index: 1;
     display: flex;
@@ -80,19 +110,19 @@ nav div li .navbar__a--active:hover {
     position: relative;
     text-align: center;
   }
-  .index__card div h2 {
+  section .index__card div h2 {
     padding: 20px 0px;
     font-size: 30px;
     font-weight: 400;
   }
-  .index__card div p {
+  section .index__card div p {
     padding: 20px 0px;
     font-size: 20px;
   }
-  .index__card img {
+  section .index__card img {
     display: none;
   }
-  .index__card--uno::before {
+  section .index__card--uno::before {
     content: "";
     background-image: url("../imagenes/Imagen_de_producto.jpg");
     background-repeat: no-repeat;
@@ -106,7 +136,7 @@ nav div li .navbar__a--active:hover {
     height: 100%;
     opacity: 0.3;
   }
-  .index__card--dos::before {
+  section .index__card--dos::before {
     content: "";
     background-image: url("../imagenes/Imagen_de_ambiente.jpg");
     background-repeat: no-repeat;
@@ -120,7 +150,7 @@ nav div li .navbar__a--active:hover {
     height: 100%;
     opacity: 0.3;
   }
-  .index__card--tres::before {
+  section .index__card--tres::before {
     content: "";
     background-image: url("../imagenes/Imagen_de_nosotros.jpg");
     background-repeat: no-repeat;
@@ -134,6 +164,9 @@ nav div li .navbar__a--active:hover {
     height: 100%;
     opacity: 0.3;
   }
+}
+footer {
+  margin-top: auto;
 }
 footer div {
   background-color: #3F342D;
@@ -213,9 +246,10 @@ main .productos .productos__carta .productos__link .productos__texto {
   justify-content: center;
   align-items: center;
   position: relative;
+  min-height: 100vh;
   height: auto;
   padding-top: 10px;
-  padding-bottom: 111px;
+  padding-bottom: 40px;
 }
 .contacto__main::before {
   content: "";

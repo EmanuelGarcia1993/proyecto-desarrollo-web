@@ -13,39 +13,60 @@
                     height: 500px;
                     max-width: 80%;
                     border-radius: 0;
+
+                    div{
+                        @include mixins.flex(column, center, center, relative);
+                        text-align: center;
+                        p{
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+                    }
                 }
+                &.index__card--uno{
+                    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), white);
+                }
+                &.index__card--dos{
+                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), white);
+                }
+                &.index__card--tres{
+                    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), white);
+                }
+
             }
         }
     }
 }
 
-@media (max-width: 768px) {
-    .index__card{
-        div{
-            @include mixins.contenido_main();
-            @include mixins.flex(column, center, center, relative);
-            text-align: center;
-            h2{
-                padding: 20px 0px;
-                font-size: 30px;
-                font-weight: 400;
+@media (max-width: 848px) {
+    section{
+        .index__card{
+            div{
+                @include mixins.contenido_main();
+                @include mixins.flex(column, center, center, relative);
+                text-align: center;
+                h2{
+                    padding: 20px 0px;
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+                p{
+                    padding: 20px 0px;
+                    font-size: 20px;
+                }
             }
-            p{
-                padding: 20px 0px;
-                font-size: 20px;
+            img{
+                display: none; 
             }
         }
-        img{
-            display: none; 
+        .index__card--uno{
+            @include mixins.fondo('../imagenes/Imagen_de_producto.jpg', scroll);
         }
-    }
-    .index__card--uno{
-        @include mixins.fondo('../imagenes/Imagen_de_producto.jpg', scroll);
-    }
-    .index__card--dos{
-        @include mixins.fondo('../imagenes/Imagen_de_ambiente.jpg', scroll);
-    }
-    .index__card--tres{
-        @include mixins.fondo('../imagenes/Imagen_de_nosotros.jpg', scroll);
+        .index__card--dos{
+            @include mixins.fondo('../imagenes/Imagen_de_ambiente.jpg', scroll);
+        }
+        .index__card--tres{
+            @include mixins.fondo('../imagenes/Imagen_de_nosotros.jpg', scroll);
+        }
     }
 }
