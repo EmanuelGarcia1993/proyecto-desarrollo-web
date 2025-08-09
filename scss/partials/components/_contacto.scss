@@ -5,8 +5,9 @@
     @include mixins.fondo('../imagenes/Fondo_de_pagina.png', fixed);
     min-height: 100vh;
     height: auto;
-    padding-top: 10px;
+    padding-top: 70px;
     padding-bottom: 40px;
+
 
     .contacto__section {
         @include mixins.contenido_main();

@@ -13,6 +13,7 @@
                     height: 500px;
                     max-width: 80%;
                     border-radius: 0;
+                    border: none;
 
                     div{
                         @include mixins.flex(column, center, center, relative);

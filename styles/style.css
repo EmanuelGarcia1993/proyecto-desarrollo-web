@@ -76,6 +76,7 @@ nav div li .navbar__a--active:hover {
   height: 500px;
   max-width: 80%;
   border-radius: 0;
+  border: none;
 }
 .index__main section section div.index__card div {
   display: flex;
@@ -248,7 +249,7 @@ main .productos .productos__carta .productos__link .productos__texto {
   position: relative;
   min-height: 100vh;
   height: auto;
-  padding-top: 10px;
+  padding-top: 70px;
   padding-bottom: 40px;
 }
 .contacto__main::before {
@@ -350,6 +351,8 @@ main .productos .productos__carta .productos__link .productos__texto {
   align-items: center;
   position: relative;
   height: auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 .informacion__main::before {
   content: "";
