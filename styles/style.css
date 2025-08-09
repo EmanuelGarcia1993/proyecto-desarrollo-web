@@ -70,6 +70,9 @@ nav div li .navbar__a--active:hover {
   position: relative;
   height: auto;
 }
+.index__main section h1 {
+  padding-top: 20px;
+}
 .index__main section section div.index__card {
   margin: 20px auto;
   width: 100%;
@@ -101,6 +104,9 @@ nav div li .navbar__a--active:hover {
 }
 
 @media (max-width: 848px) {
+  section h1 {
+    font-size: 18px;
+  }
   section .index__card div {
     position: relative;
     z-index: 1;
